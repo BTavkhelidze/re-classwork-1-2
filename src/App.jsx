@@ -1,23 +1,7 @@
-import React from 'react'
-
-
-
+import React from 'react';
+import Card from './card/Card.jsx';
 
 function App() {
-  return (
-    <div>
-      <Classwork1 />
-    </div>
-  )
-}
-
-
- 
-  
-
-
-
-function Classwork1  (){
   const names = [
     'Alice',
     'Bob',
@@ -31,20 +15,12 @@ function Classwork1  (){
     'Julia',
   ];
 
-  let randomNum = Math.floor(Math.random() * names.length );
-
-
-  
-  return(
-    <>
-       <h1>Classwork 1</h1>
-       <p>Hello, {names[randomNum]} </p>
-    </>
-  )
+  return (
+    <div>
+      {/* <h1>ss</h1> */}
+      <Card namesObj={names} />
+    </div>
+  );
 }
 
-
-
-
-
-export default App
+export default App;
